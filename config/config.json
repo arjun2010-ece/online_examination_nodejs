@@ -1,22 +1,22 @@
 {
   "development": {
-    "username": "arjun",
-    "password": "123456789a#",
-    "database": "online_examination",
+    "username": "root",
+    "password": "9840876156",
+    "database": "online_exam_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "arjun",
-    "password": "123456789a#",
-    "database": "online_examination_test",
+    "password": "9840876156",
+    "database": "online_exam_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "arjun",
-    "password": "123456789a#",
-    "database": "online_examination_production",
+    "password": "9840876156",
+    "database": "online_exam_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }

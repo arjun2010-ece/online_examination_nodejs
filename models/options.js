@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   options.init({
-    option: DataTypes.STRING,
+    option: DataTypes.JSON,
     qid: DataTypes.INTEGER
   }, {
     sequelize,
