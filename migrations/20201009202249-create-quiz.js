@@ -11,11 +11,24 @@ module.exports = {
       title: {
         type: Sequelize.STRING
       },
-      total: {
+      correct: {
         type: Sequelize.INTEGER
       },
+      wrong: {
+        type: Sequelize.INTEGER
+      },
+      totalQuestions: {
+        type: Sequelize.INTEGER
+      },
+      timeLimit:{
+        type: Sequelize.TIME
+      },
+      description:{
+        type: Sequelize.TEXT
+      },
       postedOn: {
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.NOW
       },
       createdAt: {
         allowNull: false,

@@ -17,8 +17,15 @@ module.exports = (sequelize, DataTypes) => {
   };
   quiz.init({
     title: DataTypes.STRING,
-    total: DataTypes.INTEGER,
-    postedOn: DataTypes.DATE
+    correct: DataTypes.INTEGER,
+    wrong: DataTypes.INTEGER,
+    totalQuestions: DataTypes.INTEGER,
+    timeLimit: DataTypes.Time,
+    description: DataTypes.TEXT,
+    postedOn: {
+      type: DataTypes.DATE,
+      defaultValue: DataTypes.NOW
+    }
   }, {
     sequelize,
     modelName: 'quiz',

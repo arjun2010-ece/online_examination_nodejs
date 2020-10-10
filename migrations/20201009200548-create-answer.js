@@ -18,7 +18,7 @@ module.exports = {
         onDelete: "cascade",
         onUpdate: "cascade"
       },
-      ansid: {
+      answerCode: {
         type: Sequelize.STRING
       },
       createdAt: {
