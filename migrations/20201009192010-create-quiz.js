@@ -21,7 +21,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       timeLimit:{
-        type: Sequelize.TIME
+        type: Sequelize.INTEGER
       },
       description:{
         type: Sequelize.TEXT

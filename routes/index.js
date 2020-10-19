@@ -1,9 +1,9 @@
 var express = require('express');
-var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+const quizRouter = require("./quiz");
 
-module.exports = router;
+let registerApp = function(app){
+    app.use("/api/quiz/", quizRouter)
+}
+
+module.exports = registerApp;

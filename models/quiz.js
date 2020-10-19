@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
     correct: DataTypes.INTEGER,
     wrong: DataTypes.INTEGER,
     totalQuestions: DataTypes.INTEGER,
-    timeLimit: DataTypes.Time,
+    timeLimit: DataTypes.INTEGER,
     description: DataTypes.TEXT,
     postedOn: {
       type: DataTypes.DATE,
